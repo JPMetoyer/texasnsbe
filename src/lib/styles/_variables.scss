@@ -1,0 +1,58 @@
+// Brand base
+$black:    #000000;
+$charcoal: #1A1A1A;
+$white:    #FFFFFF;
+
+// Warm neutral
+$sand:     #F4EBD0; // warm, readable with black/charcoal text
+
+// Accent golds
+$gold:            #FFB400; // use for fills, strokes, buttons on dark bg
+$gold-ink-light:  #996300; // AA on white (text/icons on light bg)
+$gold-ink-sand:   #8A5900; // AA on sand (text/icons on sand bg)
+
+// Role tokens (map to CSS vars so you can theme via a body class)
+:root {
+  /* default to gold theme */
+  --bg:            #000000;
+  --surface:       #1A1A1A;
+  --text:          #FFFFFF;
+  --muted:         #CFCFCF;
+
+  --accent:        #FFB400; /* for fills on dark bg */
+  --accent-ink:    #FFB400; /* gold text on dark bg is fine */
+
+  --link:          #FFB400;
+  --border:        #2A2A2A;
+  --focus:         #FFB400;
+}
+
+/* Gold accent theme on dark */
+body.theme-gold {
+  --bg:         #000000;
+  --surface:    #1A1A1A;
+  --text:       #FFFFFF;
+  --muted:      #CFCFCF;
+
+  --accent:     #FFB400;   /* buttons, badges on dark */
+  --accent-ink: #FFB400;   /* gold text OK on dark */
+
+  --link:       #FFB400;
+  --border:     #2A2A2A;
+  --focus:      #FFB400;
+}
+
+/* Warm neutral (sand) with black text */
+body.theme-sand {
+  --bg:         #F4EBD0;   /* sand background */
+  --surface:    #FFFFFF;   /* cards/surfaces */
+  --text:       #000000;   /* black text for max readability */
+  --muted:      #333333;
+
+  --accent:     #FFB400;   /* use for fills (icons, small badges) */
+  --accent-ink: #8A5900;   /* readable “gold ink” on sand */
+
+  --link:       #8A5900;   /* goldish link that passes on sand */
+  --border:     #E5D9B8;
+  --focus:      #8A5900;
+}
