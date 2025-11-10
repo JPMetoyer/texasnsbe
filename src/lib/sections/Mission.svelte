@@ -18,14 +18,15 @@
 
 <style lang="scss">
 .mission {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  margin: 0 auto;
   background-color: #f4eed7; // your site’s sand tone
   color: #111;
   padding: 5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   position: relative;
 }
@@ -33,6 +34,13 @@
 .content {
   max-width: 900px;
   padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+        margin-right: 3rem;
+
+  }
 }
 
 .intro {

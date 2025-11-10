@@ -12,46 +12,46 @@
 
   // ---- DATA: fill in linkedin URLs whenever you have them ----
   const execBoard: Officer[] = [
-    { name: 'Joshua Chikosha', role: 'President', photo: 'josh.JPG', zone: 'exec' /*, linkedin: ''*/ },
-    { name: 'Kilali Latter', role: 'Vice-President', photo: 'kilali.JPG', zone: 'exec' /*, linkedin: ''*/ },
-    { name: 'Angela Kamgang', role: 'Treasurer', photo: 'angela.JPG', zone: 'exec' /*, linkedin: ''*/ },
-    { name: 'David Udoh', role: 'Programs Chair', photo: 'david.JPG', zone: 'exec' /*, linkedin: ''*/ },
-    { name: 'Enow Tanyi', role: 'Secretary', photo: 'enow.JPG', zone: 'exec' /*, linkedin: ''*/ }
+    { name: 'Joshua Chikosha', role: 'President', photo: 'josh.JPG', zone: 'exec', linkedin: 'https://www.linkedin.com/in/joshua-chikosha/' /* TODO: add LinkedIn URL */ },
+    { name: 'Kilali Latter', role: 'Vice-President', photo: 'kilali.JPG', zone: 'exec', linkedin: 'https://www.linkedin.com/in/kilali-latter/' /* TODO: add LinkedIn URL */ },
+    { name: 'Angela Kamgang', role: 'Treasurer', photo: 'angela.JPG', zone: 'exec', linkedin: 'https://www.linkedin.com/in/angela-kamgang-27b3ba328/' /* TODO: add LinkedIn URL */ },
+    { name: 'David Udoh', role: 'Programs Chair', photo: 'david.JPG', zone: 'exec', linkedin: 'https://www.linkedin.com/in/davidudoh/' /* TODO: add LinkedIn URL */ },
+    { name: 'Enow Tanyi', role: 'Secretary', photo: 'enow.JPG', zone: 'exec', linkedin: 'https://www.linkedin.com/in/enow-tanyi/' /* TODO: add LinkedIn URL */ }
   ];
 
   const communications: Officer[] = [
-    { name: 'Tobi Sakin', role: 'Cockrell Relations Chair', photo: 'tobi.JPG', zone: 'communications' },
-    { name: 'Kevin Uduji', role: 'Telecommunications Chair', zone: 'communications' },
-    { name: 'Casey Hawthorne', role: 'Public Relations Chair', photo: 'casey.JPG', zone: 'communications' },
-    { name: 'Aaron Evans', role: 'Public Relations Chair', photo: 'aaron.JPG', zone: 'communications' },
-    { name: 'Benita Egorah', role: 'Public Relations Chair', photo: 'benita.JPG', zone: 'communications' },
-    { name: 'Giles Mbakwa', role: 'Public Relations Chair', photo: 'giles.JPG', zone: 'communications' }
+    { name: 'Tobi Sakin', role: 'Cockrell Relations Chair', photo: 'tobi.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/tobisakin/' /* TODO: add LinkedIn URL */ },
+    { name: 'Jean-Paul Metoyer', role: 'Telecommunications Chair', zone: 'communications', linkedin: 'https://www.linkedin.com/in/jpmetoyer/' /* TODO: add LinkedIn URL */ },
+    { name: 'Casey Hawthorne', role: 'Public Relations Chair', photo: 'casey.JPG', zone: 'communications', linkedin: '' /* TODO: add LinkedIn URL */ },
+    { name: 'Aaron Evans', role: 'Public Relations Chair', photo: 'aaron.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/aaron-evans5z/' /* TODO: add LinkedIn URL */ },
+    { name: 'Benita Egorah', role: 'Public Relations Chair', photo: 'benita.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/benita-egorah/' /* TODO: add LinkedIn URL */ },
+    { name: 'Giles Mbakwa', role: 'Public Relations Chair', photo: 'giles.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/mbakwagiles/' /* TODO: add LinkedIn URL */ }
   ];
 
   const membership: Officer[] = [
-    { name: 'Chinoso Nwanebi', role: 'Membership Chair', photo: 'chinoso.JPG', zone: 'membership' },
-    { name: 'Sara Adio', role: 'Membership Chair', photo: 'sara.JPG', zone: 'membership' },
-    { name: 'Alexia Mougoue', role: 'FAT Advisor', photo: 'alexia.JPG', zone: 'membership' },
-    { name: 'Laci Moline', role: 'BWISE Chair', photo: 'laci.JPG', zone: 'membership' },
-    { name: 'Chancellor Joseph', role: 'Professional Development Chair', zone: 'membership' },
-    { name: 'Kofi Bekoe', role: 'Academic Excellence Chair', photo: 'kofi.JPG', zone: 'membership' },
-    { name: 'Adam Mann', role: 'Graduate Liaison', zone: 'membership' }
+    { name: 'Chinoso Nwanebi', role: 'Membership Chair', photo: 'chinoso.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/chinoso-nwanebi-4402ba327/' /* TODO: add LinkedIn URL */ },
+    { name: 'Sara Adio', role: 'Membership Chair', photo: 'sara.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/sara-adio-oduola-5a6369228/' /* TODO: add LinkedIn URL */ },
+    { name: 'Alexia Mougoue', role: 'FAT Advisor', photo: 'alexia.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/alexia-mougoue-33aa07208/' /* TODO: add LinkedIn URL */ },
+    { name: 'Laci Moline', role: 'BWISE Chair', photo: 'laci.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/lacimoline/' /* TODO: add LinkedIn URL */ },
+    { name: 'Chancellor Joseph', role: 'Professional Development Chair', zone: 'membership', linkedin: 'https://www.linkedin.com/in/chancellor-joseph-38586113a/' /* TODO: add LinkedIn URL */ },
+    { name: 'Kofi Bekoe', role: 'Academic Excellence Chair', photo: 'kofi.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/kofi-bekoe/' /* TODO: add LinkedIn URL */ },
+    { name: 'Adam Mann', role: 'Graduate Liaison', zone: 'membership', linkedin: 'https://www.linkedin.com/in/adam-nathan-mann/' /* TODO: add LinkedIn URL */ }
   ];
 
   const program: Officer[] = [
-    { name: 'Ganiat Ogidan', role: 'Conference Planner', zone: 'program' },
-    { name: 'Jaydon Anyikam', role: 'Conference Planner', photo: 'jaydon.JPG', zone: 'program' },
-    { name: 'Terrence Adegbesan', role: 'Finance Chair', photo: 'terrence.JPG', zone: 'program' },
-    { name: 'Victor Uche', role: 'Corporate Liaison', photo: 'victor.JPG', zone: 'program' },
-    { name: 'Christine Daniel', role: 'Fundraising Chair', photo: 'christine.JPG', zone: 'program' }
+    { name: 'Ganiat Ogidan', role: 'Conference Planner', photo: 'ganiat.JPG', zone: 'program', linkedin: 'https://www.linkedin.com/in/ganiat-ogidan/' /* TODO: add LinkedIn URL */ },
+    { name: 'Jaydon Anyikam', role: 'Conference Planner', photo: 'jaydon.JPG', zone: 'program', linkedin: 'https://www.linkedin.com/in/jaydon-anyikam/' /* TODO: add LinkedIn URL */ },
+    { name: 'Terrence Adegbesan', role: 'Finance Chair', photo: 'terrence.JPG', zone: 'program', linkedin: 'https://www.linkedin.com/in/terrence-adegbesan/' /* TODO: add LinkedIn URL */ },
+    { name: 'Victor Uche', role: 'Corporate Liaison', photo: 'victor.JPG', zone: 'program', linkedin: 'https://www.linkedin.com/in/victor-uche-567008202/' /* TODO: add LinkedIn URL */ },
+    { name: 'Christine Daniel', role: 'Fundraising Chair', photo: 'christine.JPG', zone: 'program', linkedin: 'https://www.linkedin.com/in/daniel-christine/' /* TODO: add LinkedIn URL */ }
   ];
 
   const finance: Officer[] = [
-    { name: 'Alexander Milton', role: 'Athletics Chair', photo: 'alex.JPG', zone: 'finance' },
-    { name: 'Imuetiyan Ogbeide', role: 'Pre-Collegiate Initiative Chair', photo: 'Imuetiyan.JPG', zone: 'finance' },
-    { name: 'Jaylon Collins', role: 'TORCH Chair', photo: 'jaylon.JPG', zone: 'finance' },
-    { name: 'Stephanie Ohuakanwa', role: 'Social Chair', zone: 'finance' },
-    { name: 'Tee Edwards', role: 'Social Chair', zone: 'finance' }
+    { name: 'Alexander Milton', role: 'Athletics Chair', photo: 'alex.JPG', zone: 'finance', linkedin: 'https://www.linkedin.com/in/alexander-jevon-milton/' /* TODO: add LinkedIn URL */ },
+    { name: 'Imuetiyan Ogbeide', role: 'Pre-Collegiate Initiative Chair', photo: 'Imuetiyan.JPG', zone: 'finance', linkedin: 'https://www.linkedin.com/in/imuetiyan-ogbeide/' /* TODO: add LinkedIn URL */ },
+    { name: 'Jaylon Collins', role: 'TORCH Chair', photo: 'jaylon.JPG', zone: 'finance', linkedin: 'https://www.linkedin.com/in/jaylon-collins-230259321/' /* TODO: add LinkedIn URL */ },
+    { name: 'Stephanie Ohuakanwa', role: 'Social Chair', zone: 'finance', linkedin: 'https://www.linkedin.com/in/stephanie-ohuakanwa-b9bb48327/' /* TODO: add LinkedIn URL */ },
+    { name: 'Tee Edwards', role: 'Social Chair', zone: 'finance', linkedin: 'https://www.linkedin.com/in/turelledwards/' /* TODO: add LinkedIn URL */ }
   ];
 
   // ---- ZONE GROUPS ----

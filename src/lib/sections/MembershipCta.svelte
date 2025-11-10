@@ -2,8 +2,8 @@
   export let title = 'Join Texas NSBE';
   export let blurb =
     '$25 membership dues unlock your shirt, test bank, conference discounts, voting rights, and invites to socials & more.';
-  export let formUrl = 'https://your-membership-form-link'; // TODO: replace
-  export let duesUrl = 'https://your-pay-dues-link';        // TODO: replace
+  export let formUrl = 'docs.google.com/forms/d/e/1FAIpQLSdx_JyLmclXt9NF_MTv3pXs1HwDXGqES1LxGhWbspjObOtNPg/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaesC8265qf_IcsLYFqHfBIWEG3ZtdNhN5ZPg5zfOPq6Bo79w1HTioWBFNUhZg_aem_nE8qL5cSrtniQA2SwRvdDA'; // TODO: replace
+  export let duesUrl = 'https://utdirect.utexas.edu/nlogon/txshop/item_details.WBX?application_name=ENENGALU&component=0&dept_prefix=E4&item_id=125&cat_seq_chosen=02&subcategory_seq_chosen=000';        // TODO: replace
   export let shirtSrc = '/content/shirts.png';   // TODO: point to your landscape image
 </script>
 
@@ -48,21 +48,23 @@
 }
 
 .join {
-  width: 100vw;  /* force full viewport width */
-  margin-left: calc(-50vw + 50%); /* centers it edge-to-edge */
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
   padding: 2.75rem 1rem 3.25rem;
   background:
     radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1px, transparent 1px) repeat,
     linear-gradient(180deg, #F4EBD0 0%, #fff 100%);
   background-size: 22px 22px, auto;
+
+
+  @media screen and (max-width: 768px) {
+   margin-right: 10rem  !important;
+   padding: 0 0 0 0;
+  }
+  
 }
-.join {
-  padding: 2.75rem 1rem 3.25rem;
-  background:
-    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.08) 1px, transparent 1px) repeat,
-    linear-gradient(180deg, #F4EBD0 0%, #fff 100%);
-  background-size: 22px 22px, auto;
-}
+
 
 .hdr {
   text-align: center;
@@ -92,10 +94,13 @@
 
 .content {
   max-width: 1100px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1rem 2rem;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
 
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
@@ -186,11 +191,13 @@
   box-shadow: 0 16px 40px rgba(0,0,0,.12);
   background: #111;
 
+
   img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+
   }
 }
 </style>

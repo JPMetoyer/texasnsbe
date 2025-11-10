@@ -30,42 +30,42 @@
   <!-- Desktop Nav Links -->
   <div id="links">
     <a href="/" class={currentPath === '/' ? 'selected' : ''}>Home</a>
-    <a href="#chapterinfo" >Chapter Info</a>
+    <a href="/#chapterinfo" >Chapter Info</a>
     <a href="/officers" class={$page.url.pathname === '/officers' ? 'selected' : ''}>Officers</a>
   </div>
 
   <!-- Desktop Socials + CTA -->
   <div id="additional">
-    <a href="https://www.instagram.com/txproductcatalyst/" class="social" target="_blank">
+    <a href="https://www.instagram.com/texasnsbe/" class="social" target="_blank">
       <img src="/icons/insta.png" alt="Instagram" />
     </a>
-    <a href="https://www.linkedin.com/" class="social" target="_blank">
+    <a href="https://www.linkedin.com/company/utnsbe/posts/?feedView=all" class="social" target="_blank">
       <img src="/icons/linkedin.png" alt="LinkedIn" />
     </a>
 
     <div id="socials" style="margin-right: 0.6rem;">
-      <a href="/" target="_blank">Join our Slack</a>
+      <a href="https://nsbemembers.slack.com/signup#/domain-signup" target="_blank">Join our Slack</a>
       <img src="/icons/arrow.png" alt="Arrow" />
     </div>
   </div>
 
   <!-- Slide-Over Mobile Menu -->
   <div id="menu-links" class:active={toggleMenu}>
-    <a href="/" class={currentPath === '/' ? 'selected' : ''}>Home</a>
-    <a href="/chapter-info" >Chapter Info</a>
-    <a href="/officers" class={$page.url.pathname === '/officers' ? 'selected' : ''}>Officers</a>
+    <a href="/" class={currentPath === '/' ? 'selected' : ''} on:click={handleMenuToggle}>Home</a>
+    <a href="/#chapterinfo" on:click={handleMenuToggle}>Chapter Info</a>
+    <a href="/officers" class={$page.url.pathname === '/officers' ? 'selected' : ''} on:click={handleMenuToggle}>Officers</a>
 
     <div id="scmedia">
-      <a href="https://www.instagram.com/txproductcatalyst/" class="social" on:click={handleMenuToggle} target="_blank">
+      <a href="https://www.instagram.com/texasnsbe/" class="social" on:click={handleMenuToggle} target="_blank">
         <img src="/icons/insta.png" alt="Instagram" />
       </a>
-      <a href="https://www.linkedin.com/" class="social" on:click={handleMenuToggle} target="_blank">
+      <a href="https://www.linkedin.com/company/utnsbe/posts/?feedView=all" class="social" on:click={handleMenuToggle} target="_blank">
         <img src="/icons/linkedin.png" alt="LinkedIn" />
       </a>
     </div>
 
     <div id="join">
-      <a href="/" on:click={handleMenuToggle} target="_blank">Join our Slack</a>
+      <a href="https://nsbemembers.slack.com/signup#/domain-signup" on:click={handleMenuToggle} target="_blank">Join our Slack</a>
       <img src="/icons/arrow.png" alt="Arrow" />
     </div>
   </div>
@@ -74,6 +74,11 @@
 <style lang="scss">
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap');
 @import url('https://api.fontshare.com/v2/css?f[]=open-sauce-one@400,500,600,700&display=swap');
+
+:global(html),
+:global(body) {
+  overflow-x: hidden;
+}
 
 nav {
   position: fixed;
@@ -89,6 +94,7 @@ nav {
   height: 5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  box-sizing: border-box;
 
   #logo {
     display: flex;
@@ -202,7 +208,7 @@ nav {
     width: 40px;
     height: 30px;
     position: relative;
-    right: 1rem;
+    right: 0;
     z-index: 13;
 
     span {
@@ -229,6 +235,10 @@ nav {
     @media screen and (max-width: 1024px) {
       display: block;
     }
+
+    @media screen and (max-width: 375px) {
+      width: 36px;
+    }
   }
 
   /* Slide-over menu */
@@ -245,7 +255,8 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    transform: translateX(calc(100% + 2px));
+    transform: translateX(100%);
+    will-change: transform;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     pointer-events: none;
@@ -306,6 +317,7 @@ nav {
   /* Responsive logo scaling */
   @media screen and (max-width: 600px) {
     height: 4rem;
+    padding: 0.3rem 1rem;
 
     #logo img.logo-main,
     #logo img.logo-ut {
@@ -319,6 +331,7 @@ nav {
 
   @media screen and (max-width: 375px) {
     height: 3.5rem;
+    padding: 0.25rem 0.85rem;
 
     #logo img.logo-main,
     #logo img.logo-ut {
@@ -332,6 +345,7 @@ nav {
 
   @media screen and (max-width: 340px) {
     height: 3.25rem;
+    padding: 0.25rem 0.75rem;
 
     #logo img.logo-main,
     #logo img.logo-ut {
