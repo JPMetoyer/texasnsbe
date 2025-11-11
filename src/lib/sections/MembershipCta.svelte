@@ -60,7 +60,7 @@
 
   @media screen and (max-width: 768px) {
    margin-right: 10rem  !important;
-   padding: 0 0 0 0;
+   padding: 0 0 3rem 0;
   }
   
 }
@@ -191,12 +191,21 @@
   box-shadow: 0 16px 40px rgba(0,0,0,.12);
   background: #111;
 
+  @media screen and (max-width:768px) {
+    width: 90vw;
+  }
+
 
   img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
+
+      @media screen and (max-width:768px) {
+    width: 90vw;
+  }
+
 
   }
 }

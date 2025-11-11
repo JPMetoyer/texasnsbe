@@ -257,6 +257,6 @@ h2 {
 /* Small screens */
 @media (max-width: 480px) {
   .officers { padding-top: 6.5rem; }
-  .grid { gap: 0.75rem; }
+  .grid { gap: 2rem; }
 }
 </style>
