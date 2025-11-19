@@ -21,7 +21,7 @@
 
   const communications: Officer[] = [
     { name: 'Tobi Sakin', role: 'Cockrell Relations Chair', photo: 'tobi.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/tobisakin/' /* TODO: add LinkedIn URL */ },
-    { name: 'Jean-Paul Metoyer', role: 'Telecommunications Chair', zone: 'communications', linkedin: 'https://www.linkedin.com/in/jpmetoyer/' /* TODO: add LinkedIn URL */ },
+    { name: 'Jean-Paul Metoyer', role: 'Telecommunications Chair',photo: 'jp.jpeg', zone: 'communications', linkedin: 'https://www.linkedin.com/in/jpmetoyer/' /* TODO: add LinkedIn URL */ },
     { name: 'Casey Hawthorne', role: 'Public Relations Chair', photo: 'casey.JPG', zone: 'communications', linkedin: '' /* TODO: add LinkedIn URL */ },
     { name: 'Aaron Evans', role: 'Public Relations Chair', photo: 'aaron.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/aaron-evans5z/' /* TODO: add LinkedIn URL */ },
     { name: 'Benita Egorah', role: 'Public Relations Chair', photo: 'benita.JPG', zone: 'communications', linkedin: 'https://www.linkedin.com/in/benita-egorah/' /* TODO: add LinkedIn URL */ },
@@ -33,9 +33,9 @@
     { name: 'Sara Adio', role: 'Membership Chair', photo: 'sara.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/sara-adio-oduola-5a6369228/' /* TODO: add LinkedIn URL */ },
     { name: 'Alexia Mougoue', role: 'FAT Advisor', photo: 'alexia.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/alexia-mougoue-33aa07208/' /* TODO: add LinkedIn URL */ },
     { name: 'Laci Moline', role: 'BWISE Chair', photo: 'laci.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/lacimoline/' /* TODO: add LinkedIn URL */ },
-    { name: 'Chancellor Joseph', role: 'Professional Development Chair', zone: 'membership', linkedin: 'https://www.linkedin.com/in/chancellor-joseph-38586113a/' /* TODO: add LinkedIn URL */ },
+    { name: 'Chancellor Joseph', role: 'Professional Development Chair', photo: 'chancellor.jpeg', zone: 'membership', linkedin: 'https://www.linkedin.com/in/chancellor-joseph-38586113a/' /* TODO: add LinkedIn URL */ },
     { name: 'Kofi Bekoe', role: 'Academic Excellence Chair', photo: 'kofi.JPG', zone: 'membership', linkedin: 'https://www.linkedin.com/in/kofi-bekoe/' /* TODO: add LinkedIn URL */ },
-    { name: 'Adam Mann', role: 'Graduate Liaison', zone: 'membership', linkedin: 'https://www.linkedin.com/in/adam-nathan-mann/' /* TODO: add LinkedIn URL */ }
+    { name: 'Adam Mann', role: 'Graduate Liaison', photo: 'adam.jpeg', zone: 'membership', linkedin: 'https://www.linkedin.com/in/adam-nathan-mann/' /* TODO: add LinkedIn URL */ }
   ];
 
   const program: Officer[] = [
@@ -51,7 +51,7 @@
     { name: 'Imuetiyan Ogbeide', role: 'Pre-Collegiate Initiative Chair', photo: 'Imuetiyan.JPG', zone: 'finance', linkedin: 'https://www.linkedin.com/in/imuetiyan-ogbeide/' /* TODO: add LinkedIn URL */ },
     { name: 'Jaylon Collins', role: 'TORCH Chair', photo: 'jaylon.JPG', zone: 'finance', linkedin: 'https://www.linkedin.com/in/jaylon-collins-230259321/' /* TODO: add LinkedIn URL */ },
     { name: 'Stephanie Ohuakanwa', role: 'Social Chair', zone: 'finance', linkedin: 'https://www.linkedin.com/in/stephanie-ohuakanwa-b9bb48327/' /* TODO: add LinkedIn URL */ },
-    { name: 'Tee Edwards', role: 'Social Chair', zone: 'finance', linkedin: 'https://www.linkedin.com/in/turelledwards/' /* TODO: add LinkedIn URL */ }
+    { name: 'Tee Edwards', role: 'Social Chair', photo: 'tee.jpeg', zone: 'finance', linkedin: 'https://www.linkedin.com/in/turelledwards/' /* TODO: add LinkedIn URL */ }
   ];
 
   // ---- ZONE GROUPS ----
@@ -81,7 +81,7 @@
 
 <section class="officers">
   <!-- Exec Board (prominent) -->
-  <h1>25-26 Top Five</h1>
+  <h1>25-26 NSBE Top Five!</h1>
   <div class="grid exec">
     {#each execBoard as o}
       <article
@@ -165,6 +165,7 @@ h2 {
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   margin: 3rem 0 1rem;
   color: #333;
+  text-align: center;
 }
 
 /* Shared grid */

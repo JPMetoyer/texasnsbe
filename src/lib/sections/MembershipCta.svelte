@@ -93,18 +93,13 @@
 }
 
 .content {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 1rem 2rem;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
   text-align: center;
-  place-items: center;
-
-  @media (max-width: 860px) {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Benefits list */

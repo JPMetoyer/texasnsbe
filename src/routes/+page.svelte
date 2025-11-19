@@ -7,6 +7,7 @@
    import Calendar from '$lib/sections/Calendar.svelte';
    import EventCarousel from '$lib/sections/EventCarousel.svelte';
     import MembershipCta from '$lib/sections/MembershipCta.svelte';
+    import Leaderboard from '$lib/sections/Leaderboard.svelte';
 
   import type { Gbm } from '../lib/types/gmb';
 
@@ -39,11 +40,13 @@
 
 <Mission />
 <Calendar />
-
+<Leaderboard />
 
 
 <div id="chapterinfo"></div>
 <Slides items={gbms} />
+
+
 
 <EventCarousel />
 
