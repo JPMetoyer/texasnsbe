@@ -14,24 +14,24 @@
   const gbms: Gbm[] = [
     {
       number: 5,
-      date: 'MAR 2025', // fill exact date
-      title: 'General Body Meeting #5',
-      slidesUrl: 'https://docs.google.com/presentation/d/1HLBdwAjDq6nbf_ntHZN9Pk0TtBBVzbIj-8XWoyUyM4Y/edit?slide=id.g39f108ff632_0_26#slide=id.g39f108ff632_0_26',
-      coverSrc: '/slides/gm5.png'
+      date: 'DEC 2 2025', // fill exact date
+      title: 'General Body Meeting #7',
+      slidesUrl: 'https://docs.google.com/presentation/d/1HLBdwAjDq6nbf_ntHZN9Pk0TtBBVzbIj-8XWoyUyM4Y/edit?slide=id.g39f108ff632_0_26#slide=id.g39f108ff632_0_26https://docs.google.com/presentation/d/1KvktUV5iAP34FDrIsn_qTJU0IuO7lvszdXG2ljtqXl0/edit?usp=sharing',
+      coverSrc: '/slides/gm7.png'
     },
     {
       number: 4,
-      date: 'FEB 2025',
-      title: 'General Body Meeting #4',
-      slidesUrl: 'https://docs.google.com/presentation/d/1ixWWS_FOLT-fcWERIpbIQH4u7cs2GPA1TtDCr8dsTwg/edit?slide=id.g38e13324572_0_141#slide=id.g38e13324572_0_141',
-      coverSrc: '/slides/gm4.png'
+      date: 'NOV 18 2025',
+      title: 'General Body Meeting #6',
+      slidesUrl: 'https://docs.google.com/presentation/d/1EWGdOcBiJ7Nj0QHRpmt71qWv1IxsYrlt1rmyou05HKw/edit?usp=sharing',
+      coverSrc: '/slides/gm6.png'
     },
     {
       number: 3,
-      date: 'FEB 2025',
-      title: 'General Body Meeting #3',
-      slidesUrl: 'https://docs.google.com/presentation/d/15NQ2NVtrIQV6A6hy6im4vQSRaeBQR2AQ3KYDTjv3_h4/edit',
-      coverSrc: '/slides/gm3.png'
+      date: 'NOV 4 2025',
+      title: 'General Body Meeting #5',
+      slidesUrl: 'https://docs.google.com/presentation/d/1HLBdwAjDq6nbf_ntHZN9Pk0TtBBVzbIj-8XWoyUyM4Y/edit?usp=sharing',
+      coverSrc: '/slides/gm5.png'
     }
   ];
 </script>
