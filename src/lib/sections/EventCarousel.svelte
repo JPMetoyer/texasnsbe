@@ -10,9 +10,14 @@
     { src: '/carousel/3.jpg', alt: 'NSBE members networking' },
     { src: '/carousel/4.jpg', alt: 'NSBE members networking' },
     { src: '/carousel/5.jpg', alt: 'NSBE members networking' },
-        { src: '/carousel/6.jpg', alt: 'NSBE members networking' }
-
-
+        { src: '/carousel/6.JPG', alt: 'NSBE members networking' },
+        { src: '/carousel/7.JPG', alt: 'NSBE members networking' },
+        { src: '/carousel/8.JPG', alt: 'NSBE members networking' },
+        { src: '/carousel/9.JPG', alt: 'NSBE members networking' },
+        { src: '/carousel/10.jpeg', alt: 'NSBE members networking' },
+         { src: '/carousel/11.png', alt: 'NSBE members networking' },
+         {src: '/carousel/12.png', alt: 'NSBE members networking' }
+         
 
   ];
 
